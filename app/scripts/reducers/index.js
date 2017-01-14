@@ -1,5 +1,5 @@
 /* eslint linebreak-style: ["error", "windows"] */
 /* eslint-disable no-unused-vars */
-export const list = (state = [], action) => {
+export const index = (state = {}, action) => {
   return state;
 };
