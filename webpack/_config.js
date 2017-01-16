@@ -84,6 +84,15 @@ const doConfig = opts => {
           loader: 'file?name=frassets/fonts/[name].[hash:6].[ext]',
         },
         {
+          test: /\.ttf(.*)$/,
+          loader: 'url',
+          query: {
+            limit: 10000,
+            mimetype: 'application/octet-stream',
+            name: 'fonts/[name].[ext]'
+          }
+        },
+        {
         // custom file types
           test: /\.(pdf|zip)$/,
           loader: 'file?name=files/[name].[hash:6].[ext]',
@@ -123,7 +132,6 @@ const doConfig = opts => {
       indentedSyntax: true,
       includePaths: [path.resolve(__dirname, 'app/styles')],
     },
-
     xo: {esnext: true},
   };
 };

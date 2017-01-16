@@ -8,7 +8,10 @@ import './Header.sass';
 export default class Header extends React.Component {
   render() {
     return (
-      <header className="header"> Header </header>
+      <header className="header">
+        <span className="header--logo-name">Black&White.inc</span>
+        <button className="header--sing-in">Sing in</button>
+      </header>
     );
   }
 }

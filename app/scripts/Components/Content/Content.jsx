@@ -4,11 +4,17 @@
 import React from 'react';
 import {connect}	from	'react-redux';
 import './Content.sass';
+import Category from '../Category/Category';
 
 export default class Content extends React.Component {
   render() {
     return (
-      <main className="content"> Content </main>
+      <main className="content">
+        <Category />
+        <Category />
+        <Category />
+        <Category />
+      </main>
     );
   }
 }

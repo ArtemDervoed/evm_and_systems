@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint linebreak-style: ["error", "windows"] */
-import 'styles/index.css';
+import 'styles/index.sass';
 import {render} from 'react-dom';
 import React from 'react';
 import Layout from './Components/Layout/Layout';
