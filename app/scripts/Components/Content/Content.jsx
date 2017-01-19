@@ -3,7 +3,6 @@
 
 import React from 'react';
 import {connect}	from	'react-redux';
-import './Content.sass';
 import Category from '../Category/Category';
 
 export default class Content extends React.Component {

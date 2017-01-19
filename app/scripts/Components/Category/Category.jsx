@@ -3,12 +3,14 @@
 
 import React from 'react';
 import {connect}	from	'react-redux';
-import './Category.sass';
 
 export default class Category extends React.Component {
   render() {
     return (
-      <div className="category"> Lesson </div>
+      <div className="category">
+        <h3>Предмет</h3>
+        <p>Description Description Description</p>
+      </div>
     );
   }
 }

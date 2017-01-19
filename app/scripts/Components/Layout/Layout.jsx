@@ -4,16 +4,17 @@
 import React from 'react';
 import {connect}	from	'react-redux';
 import Header from '../Header/Header';
+import ListCourses from '../ListCourses/ListCourses';
 import Content from '../Content/Content';
 import Footer from '../Footer/Footer';
-import './Layout.sass';
 
 export default class Layout extends React.Component {
+
   render() {
     return (
-      <section className="layout">
+      <section >
         <Header />
-        <Content />
+        <ListCourses />
         <Footer />
       </section>
     );

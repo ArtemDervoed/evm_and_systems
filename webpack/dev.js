@@ -39,7 +39,7 @@ module.exports = opts => {
   config.debug = true;
   config.output.publicPath = 'http://localhost:9000/';
   config.entry.app.unshift('webpack-dev-server/client?http://localhost:9000', 'webpack/hot/dev-server');
-  config.watchOptions = {timeout: 100};
+  config.watchOptions = {timeout: 50};
   config.plugins.push(new webpack.HotModuleReplacementPlugin());
   if (!opts.test) {
     config.plugins.push(new ModernizrWebpackPlugin(require('./_modernizr')));
