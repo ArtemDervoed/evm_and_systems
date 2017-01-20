@@ -21,7 +21,7 @@ export default class Header extends React.Component {
           <img src={logo} className="logos--img"/>
         </div>
           <article className="description--article">
-            <h1>Learn anything and anyherny</h1>
+            <h1>Lorem ipsum dolor sit amet</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris

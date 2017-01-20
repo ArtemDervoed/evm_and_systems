@@ -8,7 +8,7 @@ const ALLOWED_MODES = {
   DIST: true,
   PROD: true,
 };
-
+console.log(process.env.MODE);
 const BUILD_MODE = process.env.MODE;
 if (!(BUILD_MODE && ALLOWED_MODES[BUILD_MODE])) {
   console.log('Build mode was not defined.');
@@ -24,7 +24,7 @@ function build() {
   });
   webpackConfig.output = {
     path: buildPath,
-//    publicPath: '../',
+ // publicPath: '../',
     filename: 'frassets/[name].bundle.[chunkhash].js',
     chunkFilename: 'frassets/[id].bundle.[chunkhash].js',
   };

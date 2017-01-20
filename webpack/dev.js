@@ -11,7 +11,7 @@ const ALLOWED_MODES = {
 };
 
 const BUILD_MODE = process.env.MODE || 'DEBUG';
-
+console.log(BUILD_MODE);
 if (!ALLOWED_MODES[BUILD_MODE]) {
   console.log(`Build mode has wrong value. MODE=${BUILD_MODE}`);
   process.abort();
