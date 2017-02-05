@@ -89,7 +89,7 @@ const doConfig = opts => {
           query: {
             limit: 10000,
             mimetype: 'application/octet-stream',
-            name: 'fonts/[name].[ext]'
+            name: 'fo nts/[name].[ext]'
           }
         },
         {

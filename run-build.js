@@ -9,7 +9,7 @@ const ALLOWED_MODES = {
   PROD: true,
 };
 console.log(process.env.MODE);
-const BUILD_MODE = process.env.MODE;
+const BUILD_MODE = 'DIST';
 if (!(BUILD_MODE && ALLOWED_MODES[BUILD_MODE])) {
   console.log('Build mode was not defined.');
   process.abort();

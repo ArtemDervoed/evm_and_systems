@@ -1,8 +1,19 @@
 .footer
-  background-color: white
-  background-image: url("../images/list-bg-footer.png")
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
-  height: 1000px
-  z-index: 2
+  height: 50px
+  transition: .5s
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  text-transform: uppercase
+  width: 100%
+  max-width: 1920px
+  background-color: $main-color
+  &--strip
+    font-family: LatoBold
+    font-size: 16px
+    margin-right: 20px
+    color: white
+    &:hover
+      transition: .5s
+      color: $side-color
+      cursor: pointer

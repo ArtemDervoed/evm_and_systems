@@ -24,13 +24,16 @@
     "karma-nyan-reporter": "^0.2.5",
     "karma-webpack": "^1.8.1",
     "lodash": "^3.10.1",
+    "material-ui": "^0.16.7",
     "postcss-svgo": "^2.1.6",
     "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
     "react-router": "^2.6.1",
     "react-router-redux": "^4.0.7",
     "react-virtualized": "^8.11.0",
     "redux": "^3.5.2",
+    "redux-form": "^6.4.3",
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.2.0",
     "reset.css": "^2.0.2",
@@ -124,6 +127,10 @@
     ],
     "space": "true",
     "rules": {
+      "linebreak-style": [
+        "error",
+        "windows"
+      ],
       "comma-dangle": [
         2,
         "always-multiline"

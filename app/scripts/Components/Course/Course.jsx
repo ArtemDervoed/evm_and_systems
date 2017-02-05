@@ -4,6 +4,7 @@
 import React from 'react';
 import {connect}	from	'react-redux';
 import bg from './bg.jpg';
+import {Link} from 'react-router';
 
 export default class Course extends React.Component {
   render() {
@@ -16,7 +17,7 @@ export default class Course extends React.Component {
             <p>Description Description Description Description</p>
           </article>
         </div>
-        <button className="course--button" >Try it</button>
+        <Link to={`/study`} className="course--button">Try it</Link>
       </div>
     );
   }
