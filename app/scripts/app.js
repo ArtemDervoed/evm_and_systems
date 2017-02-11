@@ -3,7 +3,7 @@
 import 'styles/index.sass';
 import {render} from 'react-dom';
 import React from 'react';
-import {Router, Route, hashHistory} from 'react-router';
+import {Router, Route, browserHistory} from 'react-router';
 import {syncHistoryWithStore} from 'react-router-redux';
 import Main from 'pages/Main/Main';
 import Login from 'pages/Login/Login';
@@ -14,11 +14,13 @@ import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import {store} from './store/store';
 
+const history = syncHistoryWithStore(browserHistory, store);
+
 export default class Application {
   start() {
     render(
       <Provider store= {store}>
-        <Router history={hashHistory}>
+        <Router history={history}>
          <Route path="/" component={Main} />
          <Route path="/login" component={Login} />
          <Route path="/user" component={User} />

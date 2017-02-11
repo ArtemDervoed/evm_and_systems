@@ -9,14 +9,10 @@ import Info from 'components/Info/Info';
 import Footer from 'components/Footer/Footer';
 
 class Main extends React.Component {
-  constructor() {
-    super();
-    this.login = false;
-  }
   render() {
     return (
       <section >
-        <Header login={this.login}/>
+        <Header/>
         <TopBlock header="header" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex

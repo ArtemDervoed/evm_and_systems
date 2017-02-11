@@ -7,12 +7,11 @@ import {fetchPosts} from 'actions/actions';
 class User extends React.Component {
   getUsers() {
     const users = this.props.dispatch(fetchPosts());
-    console.log(users);
   }
   render() {
     return (
       <section >
-        <Header header={false}/>
+        <Header/>
         <TopBlock header="User228" description="active"/>
         <button onClick={this.getUsers.bind(this)}>Go bla</button>
       </section>

@@ -7,10 +7,10 @@ new WebpackDevServer((webpack(webpackConfig)), {
   filename: 'bundle.js',
   inline: true,
   hot: true,
+  historyApiFallback: true,
   headers: {
     "Access-Control-Allow-Origin": "*"
   },
-  historyApiFallback: true,
   stats: {
     colors: true,
   },

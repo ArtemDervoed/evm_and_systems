@@ -1,13 +1,9 @@
-/* eslint linebreak-style: ["error", "windows"] */
-
+/* eslint-disable no-unused-vars */
 import {applyMiddleware, createStore} from 'redux';
-import {index} from './../reducers/index';
+import combineReducers from './../reducers/index';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
+import {syncHistoryWithStore} from 'react-router-redux';
 
 export const middleware = applyMiddleware(thunk, logger());
-export const store = createStore(index, middleware);
-
-store.subscribe(() => {
-  console.log("changed", store.getState());
-});
+export const store = createStore(combineReducers, middleware);

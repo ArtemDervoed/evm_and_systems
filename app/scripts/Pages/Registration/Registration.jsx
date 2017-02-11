@@ -7,9 +7,9 @@ export default class Registration extends React.Component {
   render() {
     return (
       <section >
-        <Header header={false}/>
+        <Header/>
         <TopBlock header="Зарегайся епта" description="kek" />
-        <form method="POST" action="https://polar-forest-21563.herokuapp.com/api/users" >
+        <form method="POST" action="https://serene-hamlet-19929.herokuapp.com/api/users" >
           <input type="text" name="name" placeholder="Имя" />
           <input type="text" name="email" placeholder="Мыло" />
           <input type="password" name="password" placeholder="password" />

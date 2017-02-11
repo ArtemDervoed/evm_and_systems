@@ -8,7 +8,7 @@ export default class Subjects extends React.Component {
   render() {
     return (
       <section >
-        <Header header={false}/>
+        <Header/>
       </section>
     );
   }

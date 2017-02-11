@@ -2,15 +2,18 @@
 import fetch from 'isomorphic-fetch';
 
 export const fetchPosts = () => dispatch => {
-  return fetch('https://polar-forest-21563.herokuapp.com/api/users', {
+  return fetch('https://serene-hamlet-19929.herokuapp.com/api/users', {
     method: 'Get',
+    headers: {
+      Authorization: "Token HTBnp/tLhws2/nlTGGMqEw==",
+    },
   })
     .then(response => response.json())
-    .then(json => dispatch({type: 'FETCH_STUDYS', payload: json}));
+    .then(json => dispatch({type: 'LOGIN', payload: json}));
 };
 
 export const logoutUser = () => dispatch => {
-  return fetch('https://polar-forest-21563.herokuapp.com/api/signout/', {
+  return fetch('https://serene-hamlet-19929.herokuapp.com/api/signout/', {
     method: 'DELETE',
     headers: "Current-Type",
   })
